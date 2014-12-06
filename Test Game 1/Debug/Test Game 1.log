@@ -1,0 +1,35 @@
+﻿Build started 12/5/2014 9:33:30 PM.
+     1>Project "C:\Users\Big\Documents\Visual Studio 2013\Projects\Games\Test Games\Test Game 1\Test Game 1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Entity.cpp Game.cpp Projectile.cpp Ship.cpp main.cpp
+         Ship.cpp
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\stdafx.h(20): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\ship.cpp(48): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\ship.cpp(49): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\ship.cpp(50): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\ship.cpp(51): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Projectile.cpp
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\stdafx.h(20): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+         Entity.cpp
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\stdafx.h(20): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\entity.cpp(45): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+         Compiling...
+         main.cpp
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\stdafx.h(20): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+         Game.cpp
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\stdafx.h(20): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>c:\users\big\documents\visual studio 2013\projects\games\test games\test game 1\game.cpp(16): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Big\Documents\Visual Studio 2013\Projects\Games\Test Games\Debug\Test Game 1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML-2.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" pthreadVC2.lib pthreadVCE2.lib pthreadVSE2.lib pthreadVC2.lib pthreadVCE2.lib pthreadVSE2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Big\Documents\Visual Studio 2013\Projects\Games\Test Games\Debug\Test Game 1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Big\Documents\Visual Studio 2013\Projects\Games\Test Games\Debug\Test Game 1.lib" /MACHINE:X86 Debug\Entity.obj
+         Debug\Game.obj
+         Debug\main.obj
+         Debug\Projectile.obj
+         Debug\Ship.obj
+         Test Game 1.vcxproj -> C:\Users\Big\Documents\Visual Studio 2013\Projects\Games\Test Games\Debug\Test Game 1.exe
+     1>Done Building Project "C:\Users\Big\Documents\Visual Studio 2013\Projects\Games\Test Games\Test Game 1\Test Game 1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.33
