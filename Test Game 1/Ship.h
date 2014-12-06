@@ -16,6 +16,9 @@ public:
 	int health;
 	int maxShield = 100;
 	int maxHealth = 100;
+	float boost;
+	float boostMax = 100;
+	float boostSpeed;
 	bool firedShot = false;
 	float turretAngle = 0.0;
 
@@ -28,6 +31,7 @@ public:
 	void control(sf::RenderWindow& win);
 	void update(sf::RenderWindow& win);
 	void draw(sf::RenderWindow& win);
+	void Ship::moveSprite(double dx, double dy);
 
 	// Gets & Sets
 	sf::Sprite& getTurret();

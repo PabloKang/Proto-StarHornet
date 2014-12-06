@@ -7,8 +7,6 @@ class Entity
 {
 public:
 	// Property Variables
-
-
 	sf::Sprite sprite;
 	sf::Texture texture;
 
