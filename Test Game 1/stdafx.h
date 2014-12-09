@@ -15,9 +15,15 @@
 
 // SFML Includes
 #include <SFML/Graphics.hpp>
+#include <SFML/System/Time.hpp>
+#include <SFML/System/Vector2.hpp>
+
+// Custom Includes
+#include "Animation.h"
+#include "AnimatedSprite.h"
 
 // Included Constants
-const float PI = 3.14159265;
+const float PI = 3.1428571428571428f;
 
 // TODO: reference additional headers your program requires here
 

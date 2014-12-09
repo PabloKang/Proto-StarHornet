@@ -17,6 +17,5 @@ public:
 
 	// Primary Functions
 	void update();
-	void draw(sf::RenderWindow& win);
 };
 

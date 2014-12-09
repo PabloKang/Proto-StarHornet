@@ -9,7 +9,7 @@ public:
 	// Game State Data
 	sf::Event event;
 	Ship* playerShip;
-	std::vector<Projectile> bullets;
+	Entities entities;
 
 	// Game Constructors
 	Game(sf::RenderWindow& win);
@@ -18,7 +18,7 @@ public:
 	// Game Functions
 	bool	init();
 	int		exec();
-	void	update();
+	void	update(sf::Clock clock);
 	void	draw(float interpolation);
 };
 

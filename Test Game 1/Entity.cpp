@@ -1,6 +1,5 @@
 #include "Entity.h"
 
-
 Entity::Entity()
 {
 	speed = 0;
@@ -15,7 +14,7 @@ Entity::Entity(std::string filePath, sf::Vector2f position)
 	angle = 0;
 
 	scale = sf::Vector2f(1, 1);
-	setTexture(sprite, texture, filePath);
+	setSpriteTexture(sprite, texture, filePath);
 	sprite.setPosition(position);
 }
 
@@ -27,8 +26,8 @@ Entity::~Entity()
 void Entity::update()
 {
 	float angleRad = PI * (angle / 180);
-	double move_x = speed * cos(angleRad);
-	double move_y = speed * sin(angleRad);
+	float move_x = speed * cos(angleRad);
+	float move_y = speed * sin(angleRad);
 
 	moveSprite(sprite, move_x, move_y, angle);
 }
@@ -40,14 +39,25 @@ void Entity::draw(sf::RenderWindow& win)
 }
 
 
-void Entity::moveSprite(sf::Sprite& sprite, double move_x, double move_y, float angle)
+void Entity::moveSprite(sf::Sprite& sprite, float move_x, float move_y, float angle)
 {
 	sprite.move(move_x, move_y);
 	sprite.setRotation(angle);
 }
 
 
-bool Entity::setTexture(sf::Sprite& sprite, sf::Texture& texture, std::string filePath)
+bool Entity::setTexture(sf::Texture& texture, std::string filePath)
+{
+	if (!texture.loadFromFile(filePath)) {
+		std::cout << "ERROR :: Unable to load texture '" << filePath << "'\n";
+		return false;
+	}
+	texture.setSmooth(true);
+	return true;
+}
+
+
+bool Entity::setSpriteTexture(sf::Sprite& sprite, sf::Texture& texture, std::string filePath)
 {
 	if (!texture.loadFromFile(filePath)) {
 		std::cout << "ERROR :: Unable to load texture '" << filePath << "'\n";
@@ -56,6 +66,18 @@ bool Entity::setTexture(sf::Sprite& sprite, sf::Texture& texture, std::string fi
 	texture.setSmooth(true);
 	sprite = sf::Sprite(texture);
 	sprite.setScale(scale);
+	return true;
+}
+
+
+bool Entity::setAnimationTexture(Animation& anim, sf::Texture& texture, std::string filePath)
+{
+	if (!texture.loadFromFile(filePath)) {
+		std::cout << "ERROR :: Unable to load texture '" << filePath << "'\n";
+		return false;
+	}
+	texture.setSmooth(true);
+	anim.setSpriteSheet(texture);
 	return true;
 }
 

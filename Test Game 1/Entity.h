@@ -3,6 +3,14 @@
 
 #include "stdafx.h"
 
+class Projectile;
+
+struct Entities {
+	std::vector<Projectile*> playerBullets;
+	std::vector<Projectile*> enemyBullets;
+};
+
+
 class Entity
 {
 public:
@@ -23,10 +31,12 @@ public:
 	// Primary Functions
 	void update();
 	void draw(sf::RenderWindow& win);
-	void moveSprite(sf::Sprite& sprite, double move_x, double move_y, float angle);
+	void moveSprite(sf::Sprite& sprite, float move_x, float move_y, float angle);
 
 	// Gets & Sets
-	bool setTexture(sf::Sprite& sprite, sf::Texture& texture, std::string filePath);
+	bool setTexture(sf::Texture& texture, std::string filePath);
+	bool setSpriteTexture(sf::Sprite& sprite, sf::Texture& texture, std::string filePath);
+	bool setAnimationTexture(Animation& anim, sf::Texture& texture, std::string filePath);
 	sf::Sprite& getSprite();
 };
 
