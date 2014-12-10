@@ -5,6 +5,7 @@ class Game
 {
 public:
 	sf::RenderWindow& window;
+	sf::View view;
 
 	// Game State Data
 	sf::Event event;

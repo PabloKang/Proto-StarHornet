@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,6 +31,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AnimatedSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Star Hornet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,31 +62,33 @@
     <ClInclude Include="AnimatedSprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Sprites\enemy_bomber.gif">
+    <Image Include="Sprites\hornet_turret_small.gif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Sprites\enemy_drone.gif">
+    <Image Include="Sprites\hornet_thrust_spritesheet.gif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Sprites\enemy_fighter.gif">
+    <Image Include="Sprites\turret_bullet.gif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Sprites\enemy_shot.gif">
+    <Image Include="Sprites\hornet_body_small.gif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Sprites\explosion.png">
+    <Image Include="Sprites\icon.gif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Sprites\gameover.gif">
+    <Image Include="icon1.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Sprites\player_ship.gif">
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Star Hornet.rc">
       <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Sprites\player_shot.gif">
-      <Filter>Resource Files</Filter>
-    </Image>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

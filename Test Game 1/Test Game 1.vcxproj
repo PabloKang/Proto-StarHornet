@@ -14,6 +14,7 @@
     <ProjectGuid>{91CBF558-DAF2-4A4F-A875-C19B22197DB2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>TestGame1</RootNamespace>
+    <ProjectName>Star Hornet</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -88,7 +89,7 @@
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Star Hornet.cpp" />
     <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="Ship.cpp" />
   </ItemGroup>
@@ -99,18 +100,20 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Projectile.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Ship.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Sprites\enemy_bomber.gif" />
-    <Image Include="Sprites\enemy_drone.gif" />
-    <Image Include="Sprites\enemy_fighter.gif" />
-    <Image Include="Sprites\enemy_shot.gif" />
-    <Image Include="Sprites\explosion.png" />
-    <Image Include="Sprites\gameover.gif" />
-    <Image Include="Sprites\player_ship.gif" />
-    <Image Include="Sprites\player_shot.gif" />
+    <Image Include="icon1.ico" />
+    <Image Include="Sprites\hornet_body_small.gif" />
+    <Image Include="Sprites\hornet_thrust_spritesheet.gif" />
+    <Image Include="Sprites\hornet_turret_small.gif" />
+    <Image Include="Sprites\icon.gif" />
+    <Image Include="Sprites\turret_bullet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Star Hornet.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

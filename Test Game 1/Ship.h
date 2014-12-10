@@ -26,13 +26,19 @@ public:
 	float boostSpeed;
 	float turretAngle = 0.0;
 	bool firedShot = false;
-	float shotSpeed = 20.0f;
+	float shotSpeed = 30.0f;
 	int shotDelay = 150;
 
+	bool frntThrusting = false;
+	bool rearThrusting = false;
+
 	// Animations
-	AnimatedSprite thrustSprite;
-	Animation* currentThrust;
-	Animation thrust_MainFW;
+	Animation rearThrust_anim;
+	Animation frntThrust_anim;
+
+	// AnimatedSprites
+	AnimatedSprite rearThrust_sprite;
+	AnimatedSprite frntThrust_sprite;
 
 	// Constructors
 	Ship();
@@ -40,8 +46,8 @@ public:
 	~Ship();
 
 	// Primary Functions
-	void control(sf::RenderWindow& win, Entities& entities);
-	void update(sf::RenderWindow& win, Entities& entities, sf::Time frameTime);
+	void control();
+	void update(sf::RenderWindow& win, sf::View& view, Entities& entities, sf::Time frameTime);
 	void draw(sf::RenderWindow& win);
 	void Ship::moveSprite(float dx, float dy);
 
